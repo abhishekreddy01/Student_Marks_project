@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/free-photo/book-with-green-board-background_1150-3837.jpg?w=1060&t=st=1677565468~exp=1677566068~hmac=09128999b5ef83e1e05f3eaf4ac134074a24dd8869877a2db0d39d7d13d492e9);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h2 {
+            padding: 15px;
+            background-color: rgb(232, 235, 154);
+            padding: 10px 2px;
+            border-radius: 10px;
+        }
+
+        body {
+            padding: 0px;
+            /* border: 4px solid black; */
+            background-color: rgb(142, 211, 220);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: azure;
+            padding: 15px;
+        }
+
+        .container {
+            width: 800px;
+        }
+
+        .good {
+            text-align: center;
+            background-color: rgb(232, 189, 234);
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>RESULT</h1>
+        <h2>Student Details : [[${marks.getStudentId()}]]</h2>
+        <h2>Marks for CAD : [[${marks.getCAD()}]]</h2>
+        <h2>Marks for Chemistry : [[${marks.getChemistry()}]]</h2>
+        <h2>Marks for physics : [[${marks.getPhysics()}]]</h2>
+        <h2>Marks for Mathematics : [[${marks.getMathematics()}]]</h2>
+        <h2>Marks for DE : [[${marks.getDE()}]]</h2>
+        <h2 class="good">ALL THE BEST</h2>
+    </div>
+</body>
+
+</html>
